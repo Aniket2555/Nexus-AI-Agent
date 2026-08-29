@@ -1,0 +1,59 @@
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+.venv/
+venv/
+.mypy_cache/
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+dist/
+build/
+
+# --- Env / secrets ---
+.env
+.env.*
+!.env.example
+
+# --- LangGraph ---
+.langgraph_api/
+
+# --- Node / frontend ---
+node_modules/
+.next/
+out/
+frontend/.env.local
+*.tsbuildinfo
+next-env.d.ts
+
+# --- Terraform ---
+**/.terraform/
+*.tfstate
+*.tfstate.*
+*.tfvars
+!**/environments/*.tfvars
+crash.log
+crash.*.log
+
+# --- Docker / data volumes ---
+data/
+
+# --- Eval / benchmark output ---
+eval_report.json
+benchmark_report*.json
+
+# --- IDE ---
+.vscode/
+.idea/
+*.swp
+
+# --- OS ---
+.DS_Store
+Thumbs.db
+
+# --- Local recovery/scratch artifacts ---
+RECOVERY_STATUS.md
+Implementation-details/Phase_*_implementation_plan.md

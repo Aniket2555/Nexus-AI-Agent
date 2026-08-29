@@ -1,0 +1,23 @@
+doc_id: "acme:handbook.pdf"
+source: "handbook.pdf"
+tenant_id: "acme"
+pages:
+  - page: 10
+    text: >
+      NEXUS is a multi-agent AI platform built on LangGraph, combining
+      retrieval-augmented generation with specialist agents for code
+      execution, data analysis, and browser automation.
+  - page: 11
+    text: >
+      The supervisor graph plans a task, dispatches it to specialist
+      subgraphs in dependency-respecting rounds, and reviews the combined
+      result before finalizing an answer.
+  - page: 12
+    text: "NEXUS ships with dense retrieval over Qdrant."
+  - page: 13
+    text: "Hybrid search fuses dense and sparse results with reciprocal rank fusion."
+  - page: 14
+    text: >
+      All retrieved and tool-derived content is wrapped in an
+      untrusted-content boundary before it reaches the model, and every tool
+      call passes through a per-agent allowlist enforced in code.

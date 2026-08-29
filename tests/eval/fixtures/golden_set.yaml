@@ -1,0 +1,24 @@
+- id: "q1"
+  question: "What is NEXUS built on?"
+  expected_chunk_ids:
+    - "acme:handbook.pdf:p10:c0"
+
+- id: "q2"
+  question: "How does the supervisor graph dispatch tasks to specialists?"
+  expected_chunk_ids:
+    - "acme:handbook.pdf:p11:c0"
+
+- id: "q3"
+  question: "What does NEXUS use for dense retrieval?"
+  expected_chunk_ids:
+    - "acme:handbook.pdf:p12:c0"
+
+- id: "q4"
+  question: "How does NEXUS combine dense and sparse search results?"
+  expected_chunk_ids:
+    - "acme:handbook.pdf:p13:c0"
+
+- id: "q5"
+  question: "How is untrusted content handled before it reaches the model?"
+  expected_chunk_ids:
+    - "acme:handbook.pdf:p14:c0"

@@ -1,0 +1,9 @@
+{
+  "dependencies": ["."],
+  "graphs": {
+    "rag_chat": "./backend/app/graphs/rag_chat.py:rag_graph",
+    "nexus_supervisor": "./backend/app/graphs/supervisor.py:supervisor_graph"
+  },
+  "env": ".env",
+  "python_version": "3.11"
+}

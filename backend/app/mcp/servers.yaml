@@ -1,0 +1,29 @@
+# MCP server registry (§5.1). Each top-level key is a server name; `requires_env`
+# lists environment variables that must all be set for the server to be offered
+# at all (see client.py's `load_server_configs`). `${VAR}` / `${VAR:-default}`
+# values are substituted from the environment before the config reaches
+# MultiServerMCPClient.
+
+filesystem:
+  transport: stdio
+  command: npx
+  args:
+    - "-y"
+    - "@modelcontextprotocol/server-filesystem"
+    - "${WORKSPACE_DIR:-./data/workspace}"
+
+playwright:
+  transport: stdio
+  command: npx
+  args:
+    - "-y"
+    - "@playwright/mcp@latest"
+    - "--headless"
+
+github:
+  transport: streamable_http
+  url: "https://api.githubcopilot.com/mcp/"
+  headers:
+    Authorization: "Bearer ${GITHUB_TOKEN}"
+  requires_env:
+    - GITHUB_TOKEN

@@ -1,0 +1,20 @@
+- id: "research-only"
+  task: "What retrieval strategy does NEXUS use?"
+  expected_specialists:
+    - "research"
+
+- id: "code-execution"
+  task: "Write and run a Python function that returns the sum of the first 10 prime numbers."
+  expected_specialists:
+    - "code"
+
+- id: "data-query"
+  task: "How many documents are currently registered in the document registry?"
+  expected_specialists:
+    - "data"
+
+- id: "research-and-report"
+  task: "Summarize NEXUS's retrieval architecture and produce a short report."
+  expected_specialists:
+    - "research"
+    - "report"
