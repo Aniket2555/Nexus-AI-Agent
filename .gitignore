@@ -54,8 +54,7 @@ benchmark_report*.json
 .DS_Store
 Thumbs.db
 
-# --- Local recovery/scratch artifacts ---
+# --- Local-only planning / scratch artifacts (never publish) ---
 RECOVERY_STATUS.md
-Implementation-details/Phase_*_implementation_plan.md
-Implementation-details/FUTURE_IMPROVEMENTS.md
 ARCHITECTURE.md
+Implementation-details/
